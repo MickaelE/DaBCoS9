@@ -1,0 +1,5 @@
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\bin\Debug\DaBCoS.Engine.dll
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\bin\Debug\DaBCoS.Engine.pdb
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS.Engine\obj\Debug\DaBCoS.Engine.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS.Engine\obj\Debug\DaBCoS.Engine.dll
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS.Engine\obj\Debug\DaBCoS.Engine.pdb

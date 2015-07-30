@@ -1,0 +1,39 @@
+Version 0.3.2163
+-------------
+Additions:
+- Added Check Constraint comparison support
+- Added support for trigger comparison with command-line version
+- Added start/finish events for schema object type comparisons
+- Added system messages to show when schema object type comparison is complete
+- Added Compare menu
+
+Changes:
+- Flag in DifferenceEngine to remove blank lines from start and end of compared file
+
+Bug fixes:
+- Fixed bug when disconnecting from a database the server connection string wasn't reset
+
+Version 0.3.2158
+-----------
+Bug fixes:
+SourceForge 756011 - Always trys to login using NT Auth (Gary van der Merwe)
+
+Changes:
+- Substantial re-factoring for command-line version, including custom classes as data objects, 
+	collection support, etc.
+- Changed text comparison to use DiffEngine (see http://www.codeproject.com/csharp/DiffEngine.asp)
+- Replaced file differences with collection-based implementation of the form:
+	DifferenceCollection (collection of differences between schema objects)
+		=>	Difference (difference report comparison between two databases for each schema object )
+			=>	DiffResultSpanCollection (line-by-line detail of differences)
+- New form showing results from DiffEngine
+- Renamed/moved menus/items to match Windows "standards"
+
+Additions:
+- Double-clicking on database in "Select Database" form selects the database and closes form
+- Summary of all differences displayed in log window after a successful run (single line)
+- Choose what gets compared (Tables, Stored Procs, Views and/or Functions) via Include menu
+- Export to xml functionality
+- Command line version to compare two dbs and output results to an xml file
+- Database selection form filters out databases that are offline
+- Compares triggers

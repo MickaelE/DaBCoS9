@@ -1,0 +1,4 @@
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\bin\Debug\DifferenceEngine.dll
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\bin\Debug\DifferenceEngine.pdb
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DifferenceEngine\obj\Debug\DifferenceEngine.dll
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DifferenceEngine\obj\Debug\DifferenceEngine.pdb

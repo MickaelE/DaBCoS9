@@ -1,0 +1,24 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "DaBCoS.UnitTest.Database"
+   MSDTVersion = "70"
+   SccProjectName = "SAK"
+   SccLocalPath = "SAK"
+   SccAuxPath = "SAK"
+   SccProvider = "SAK"
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "THEMISTO.Dev_Dabcos_Left.dbo"
+         ConnectStr = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Dev_Dabcos_Left;Data Source=localhost;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=THEMISTO;Use Encryption for Data=False;Tag with column collation when possible=False"
+         Colorizer = 5
+      End
+      Begin DBRefNode = "THEMISTO.Dev_Dabcos_Right.dbo"
+         ConnectStr = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Dev_Dabcos_Right;Data Source=localhost;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=THEMISTO;Use Encryption for Data=False;Tag with column collation when possible=False"
+         Colorizer = 5
+      End
+   End
+   Begin Folder = "Left Database"
+      Script = "Proc1.sql"
+   End
+   Begin Folder = "Right Database"
+      Script = "Proc2.sql"
+   End
+End

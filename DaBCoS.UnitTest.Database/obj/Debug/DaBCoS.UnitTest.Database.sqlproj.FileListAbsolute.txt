@@ -1,0 +1,5 @@
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS.UnitTest.Database\bin\Debug\DaBCoS.UnitTest.Database.dacpac
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS.UnitTest.Database\bin\Debug\dbpProjectName.dll
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS.UnitTest.Database\bin\Debug\dbpProjectName.pdb
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS.UnitTest.Database\obj\Debug\dbpProjectName.dll
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS.UnitTest.Database\obj\Debug\dbpProjectName.pdb

@@ -1,0 +1,13 @@
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\bin\Debug\DaBCoS.exe.config
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS\obj\Debug\DaBCoS.exe
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS\obj\Debug\DaBCoS.pdb
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\bin\Debug\DaBCoS.exe
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\bin\Debug\DaBCoS.pdb
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS\obj\Debug\DaBCoS.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS\obj\Debug\DaBCoS.FormAbout.resources
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS\obj\Debug\DaBCoS.FormDetail.resources
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS\obj\Debug\DaBCoS.FormMain.resources
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS\obj\Debug\DaBCoS.Results.resources
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS\obj\Debug\DaBCoS.FormSelectDatabase.resources
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS\obj\Debug\DaBCoS.csproj.GenerateResource.Cache
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS\obj\Debug\DaBCoS.FormLogin.resources

@@ -1,0 +1,6 @@
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\bin\Debug\dabcos-cmd.exe
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\bin\Debug\dabcos-cmd.pdb
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS.Cmd\obj\Debug\DaBCoS.Cmd.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS.Cmd\obj\Debug\dabcos-cmd.exe
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DaBCoS.Cmd\obj\Debug\dabcos-cmd.pdb
+\\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\bin\Debug\dabcos-cmd.exe.config

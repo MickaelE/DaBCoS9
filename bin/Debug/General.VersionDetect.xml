@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<databases>
+	<database name="SQL Server">
+		<query value="select @@version" />
+	</database>
+</databases>

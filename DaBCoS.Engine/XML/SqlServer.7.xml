@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<interface>
+	<!--
+		Return the catalog name.
+		Note:
+			The columns returned MUST be in that order:
+			0: catalog name
+	-->	
+	<add key="qryDatabases" value="select [name] from sysdatabases order by [name]" />
+	
+	<!--
+		Return the table name
+		Note:
+			The columns returned MUST be in that order:
+			0: table name
+	-->
+	<add key="qryTables" value="select TABLE_NAME from INFORMATION_SCHEMA.TABLES where TABLE_CATALOG='{0}' and TABLE_TYPE='BASE TABLE' and TABLE_NAME&lt;&gt;'dtproperties' order by TABLE_NAME" />
+	
+	<!--
+		Return table columns info:
+		Note:
+			The columns returned MUST be in that order:
+			[TO DO: look at sp_MSHelpcolumns for now]
+	-->
+	<add key="qryColumns" value="exec sp_MShelpcolumns @tablename='{0}'" />
+	
+	<!--
+		Return views info:
+		Note:
+			The columns returned MUST be in that order:
+			0: view name				
+	-->
+	<add key="qryViews" value="select TABLE_NAME from INFORMATION_SCHEMA.VIEWS where TABLE_NAME not in ('syssegments', 'sysconstraints') order by TABLE_NAME" />
+	
+	<!--
+		Return stored procedures info:
+		Note:
+			The columns returned MUST be in that order:
+			0: procedure name				
+	-->
+	<add key="qryProcs" value="select ROUTINE_NAME from INFORMATION_SCHEMA.ROUTINES where ROUTINE_TYPE = 'PROCEDURE' and ROUTINE_NAME not like 'dt_%' order by ROUTINE_NAME" />
+	
+	<!--
+		Return functions info:
+		Note:
+			The columns returned MUST be in that order:
+			0: function name				
+	-->
+	<add key="qryFunctions" value="select ROUTINE_NAME from INFORMATION_SCHEMA.ROUTINES where ROUTINE_TYPE = 'FUNCTION' order by ROUTINE_NAME" />
+	
+	<!--
+		Return object definition:
+		Note:
+			The columns returned MUST be in that order:
+			0: object definition (source code)
+	-->
+	<add key="qryObjectDefinition" value="exec sp_helptext '{0}'" />
+</interface>
