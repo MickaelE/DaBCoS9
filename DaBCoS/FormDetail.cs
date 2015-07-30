@@ -11,7 +11,7 @@ namespace DaBCoS
 	/// </summary>
 	public class FormDetail : System.Windows.Forms.Form
 	{
-		public System.Windows.Forms.ListView lvDetails;
+        public System.Windows.Forms.ListView lvDetails;
 		private System.Windows.Forms.ColumnHeader columnHeader1;
 		private System.Windows.Forms.ColumnHeader columnHeader2;
 		public System.Windows.Forms.RichTextBox rtbSource1;
@@ -20,6 +20,7 @@ namespace DaBCoS
 		private System.Windows.Forms.TabPage tpBoth;
 		public System.Windows.Forms.TabPage tpSource1;
 		public System.Windows.Forms.TabPage tpSource2;
+        public RichTextBox richTextBox1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -68,6 +69,7 @@ namespace DaBCoS
             this.rtbSource1 = new System.Windows.Forms.RichTextBox();
             this.tpSource2 = new System.Windows.Forms.TabPage();
             this.rtbSource2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.tcSource.SuspendLayout();
             this.tpBoth.SuspendLayout();
             this.tpSource1.SuspendLayout();
@@ -130,7 +132,7 @@ namespace DaBCoS
             this.tpSource1.Controls.Add(this.rtbSource1);
             this.tpSource1.Location = new System.Drawing.Point(4, 26);
             this.tpSource1.Name = "tpSource1";
-            this.tpSource1.Size = new System.Drawing.Size(989, 427);
+            this.tpSource1.Size = new System.Drawing.Size(704, 346);
             this.tpSource1.TabIndex = 1;
             this.tpSource1.Text = "Database 1";
             // 
@@ -141,17 +143,18 @@ namespace DaBCoS
             this.rtbSource1.Location = new System.Drawing.Point(0, 0);
             this.rtbSource1.Name = "rtbSource1";
             this.rtbSource1.ReadOnly = true;
-            this.rtbSource1.Size = new System.Drawing.Size(989, 427);
+            this.rtbSource1.Size = new System.Drawing.Size(704, 346);
             this.rtbSource1.TabIndex = 3;
             this.rtbSource1.Text = "";
             this.rtbSource1.WordWrap = false;
             // 
             // tpSource2
             // 
+            this.tpSource2.Controls.Add(this.richTextBox1);
             this.tpSource2.Controls.Add(this.rtbSource2);
             this.tpSource2.Location = new System.Drawing.Point(4, 26);
             this.tpSource2.Name = "tpSource2";
-            this.tpSource2.Size = new System.Drawing.Size(989, 427);
+            this.tpSource2.Size = new System.Drawing.Size(704, 346);
             this.tpSource2.TabIndex = 2;
             this.tpSource2.Text = "Database 2";
             // 
@@ -162,10 +165,22 @@ namespace DaBCoS
             this.rtbSource2.Location = new System.Drawing.Point(0, 0);
             this.rtbSource2.Name = "rtbSource2";
             this.rtbSource2.ReadOnly = true;
-            this.rtbSource2.Size = new System.Drawing.Size(989, 427);
+            this.rtbSource2.Size = new System.Drawing.Size(704, 346);
             this.rtbSource2.TabIndex = 4;
             this.rtbSource2.Text = "";
             this.rtbSource2.WordWrap = false;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(704, 346);
+            this.richTextBox1.TabIndex = 5;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.WordWrap = false;
             // 
             // FormDetail
             // 

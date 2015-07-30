@@ -1,0 +1,2 @@
+\\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DifferenceEngine\bin\Release\DifferenceEngine.dll
+\\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DifferenceEngine\obj\Release\DifferenceEngine.dll

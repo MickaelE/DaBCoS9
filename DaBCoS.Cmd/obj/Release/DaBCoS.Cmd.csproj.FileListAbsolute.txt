@@ -1,0 +1,3 @@
+\\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\bin\Release\dabcos-cmd.exe.config
+\\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\bin\Release\dabcos-cmd.exe
+\\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.Cmd\obj\Release\dabcos-cmd.exe

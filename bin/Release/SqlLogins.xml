@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SqlLoginPool xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LoginPool>
+    <SqlLogin>
+      <Address>lucatopentest.lu.se</Address>
+      <Login>ldc-mee</Login>
+      <IsLastUsed>true</IsLastUsed>
+    </SqlLogin>
+    <SqlLogin>
+      <Address>lucatopen.lu.se</Address>
+      <Login>ldc-mee</Login>
+      <IsLastUsed>false</IsLastUsed>
+    </SqlLogin>
+    <SqlLogin xsi:nil="true" />
+    <SqlLogin xsi:nil="true" />
+  </LoginPool>
+</SqlLoginPool>

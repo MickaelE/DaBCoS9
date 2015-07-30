@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<databases>
+	<database name="SQL Server">
+		<version id="SqlServer2014" name="SQL Server 2014" identifier="microsoft sql server 2014" interface="SqlServer.2000.xml" />
+		<version id="SqlServer2012" name="SQL Server 2012" identifier="microsoft sql server 2012" interface="SqlServer.2000.xml" />
+		<version id="SqlServer2008" name="SQL Server 2008" identifier="microsoft sql server 2008" interface="SqlServer.2000.xml" />
+		<version id="SqlServer2000" name="SQL Server 2000" identifier="microsoft sql server 2000" interface="SqlServer.2000.xml" />
+		<version id="SqlServer7" name="SQL Server 7" identifier="microsoft sql server  7" interface="SqlServer.7.xml" />
+	</database>
+</databases>

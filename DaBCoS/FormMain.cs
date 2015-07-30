@@ -1138,7 +1138,7 @@ namespace DaBCoS
             // itemHelpHomePage
             // 
             this.itemHelpHomePage.Index = 2;
-            this.itemHelpHomePage.Text = "Visit DaBCoS Homepage...";
+            this.itemHelpHomePage.Text = "Visit LDC\'s Homepage...";
             this.itemHelpHomePage.Click += new System.EventHandler(this.menuItem6_Click);
             // 
             // mmMain
@@ -1360,6 +1360,10 @@ namespace DaBCoS
 			{
 				Compare();
 			}
+            if (e.Button == tbbSynchronize)
+            {
+               // Compare();
+            }
 		}
 
 
@@ -1389,8 +1393,9 @@ namespace DaBCoS
 				wndDatabaseInfo.lvDetails.Columns[0].Text = String.Format("{0}.{1}..{2}", _databaseLeft.Connection.DataSource, _databaseLeft.Connection.Database, sLeftTable);
 				wndDatabaseInfo.lvDetails.Columns[1].Text = String.Format("{0}.{1}..{2}", _databaseRight.Connection.DataSource, _databaseRight.Connection.Database, sRightTable);
 
-				wndDatabaseInfo.tpSource1.Text = "not available";
-				wndDatabaseInfo.tpSource2.Text = "not available";
+                wndDatabaseInfo.tpSource1.Text = _databaseLeft.Connection.Database;
+                wndDatabaseInfo.rtbSource1.Text = _databaseLeft.Connection.Database;
+                wndDatabaseInfo.tpSource2.Text = _databaseRight.Connection.Database;
 
 				int iMaxCol = alLeft.Count;
 				if (alRight.Count > iMaxCol) iMaxCol = alRight.Count;
@@ -1400,6 +1405,7 @@ namespace DaBCoS
 					if (i<alLeft.Count) 
 					{
 						lviDummy = new ListViewItem(alLeft[i].ToString());
+                        wndDatabaseInfo.rtbSource1.Text = alLeft[i].ToString();
 					} 
 					else 
 					{
@@ -1458,7 +1464,7 @@ namespace DaBCoS
 			_databaseRight = new SqlServer();
 			_databaseRight.SetLogger(new DaBCoS.Engine.LogFunction(ShowInfoMessage));
 
-			ShowInfoMessage(Application.ProductName + " v " + Application.ProductVersion + " (c) 2002 " + Application.CompanyName);
+			ShowInfoMessage(Application.ProductName + " v " + Application.ProductVersion + " (c) 2012 " + Application.CompanyName);
 			ShowInfoMessage("This application is released under the GNU GPL license.");
 			//ShowInfoMessage("Visit http://sourceforge.net/projects/dabcos to have more info and support.");
 		}
@@ -1612,7 +1618,7 @@ namespace DaBCoS
 
 		private void menuItem6_Click(object sender, System.EventArgs e) 
 		{
-			System.Diagnostics.Process.Start("http://www.davidemauri.it/dabcos");
+			System.Diagnostics.Process.Start("http://www.ldc.lu.se");
 		}
 
 		private void menuItem5_Click(object sender, System.EventArgs e) 
