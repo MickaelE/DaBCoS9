@@ -1394,18 +1394,20 @@ namespace DaBCoS
 				wndDatabaseInfo.lvDetails.Columns[1].Text = String.Format("{0}.{1}..{2}", _databaseRight.Connection.DataSource, _databaseRight.Connection.Database, sRightTable);
 
                 wndDatabaseInfo.tpSource1.Text = _databaseLeft.Connection.Database;
-                wndDatabaseInfo.rtbSource1.Text = _databaseLeft.Connection.Database;
                 wndDatabaseInfo.tpSource2.Text = _databaseRight.Connection.Database;
+
+                wndDatabaseInfo.rtbSource2.Text = " Test";
 
 				int iMaxCol = alLeft.Count;
 				if (alRight.Count > iMaxCol) iMaxCol = alRight.Count;
+               
 
 				for (int i=0; i<iMaxCol; i++) 
 				{
 					if (i<alLeft.Count) 
 					{
 						lviDummy = new ListViewItem(alLeft[i].ToString());
-                        wndDatabaseInfo.rtbSource1.Text = alLeft[i].ToString();
+                        wndDatabaseInfo.rtbSource1.AppendText(CreateSync.addTableRowDDL(sLeftTable, alLeft[i].ToString()) + "\n");
 					} 
 					else 
 					{
@@ -1420,6 +1422,7 @@ namespace DaBCoS
 					if (i<alRight.Count) 
 					{
 						lviDummy.SubItems.Add(alRight[i].ToString());
+                        wndDatabaseInfo.rtbSource2.AppendText(CreateSync.addTableRowDDL(sRightTable, alRight[i].ToString()) + "\n");
 					} 
 					else 
 					{
@@ -1427,6 +1430,7 @@ namespace DaBCoS
 					}
 					if (lviDummy.SubItems[0].ToString() != lviDummy.SubItems[1].ToString()) 
 					{
+                      //  wndDatabaseInfo.richTextBox1.AppendText(CreateSync.CreateSpDdl(lviDummy.SubItems[1].ToString()) + "\n");
 						lviDummy.BackColor = Color.Orange;
 					}
 				}

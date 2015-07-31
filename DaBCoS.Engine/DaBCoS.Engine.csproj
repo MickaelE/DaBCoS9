@@ -96,6 +96,7 @@
     <Compile Include="..\CommonAssemblyVersion.cs">
       <Link>CommonAssemblyVersion.cs</Link>
     </Compile>
+    <Compile Include="CreateSync.cs" />
     <Compile Include="CollectionSorter.cs">
       <SubType>Code</SubType>
     </Compile>

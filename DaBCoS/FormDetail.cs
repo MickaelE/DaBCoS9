@@ -68,8 +68,8 @@ namespace DaBCoS
             this.tpSource1 = new System.Windows.Forms.TabPage();
             this.rtbSource1 = new System.Windows.Forms.RichTextBox();
             this.tpSource2 = new System.Windows.Forms.TabPage();
-            this.rtbSource2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbSource2 = new System.Windows.Forms.RichTextBox();
             this.tcSource.SuspendLayout();
             this.tpBoth.SuspendLayout();
             this.tpSource1.SuspendLayout();
@@ -158,18 +158,6 @@ namespace DaBCoS
             this.tpSource2.TabIndex = 2;
             this.tpSource2.Text = "Database 2";
             // 
-            // rtbSource2
-            // 
-            this.rtbSource2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbSource2.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbSource2.Location = new System.Drawing.Point(0, 0);
-            this.rtbSource2.Name = "rtbSource2";
-            this.rtbSource2.ReadOnly = true;
-            this.rtbSource2.Size = new System.Drawing.Size(704, 346);
-            this.rtbSource2.TabIndex = 4;
-            this.rtbSource2.Text = "";
-            this.rtbSource2.WordWrap = false;
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -181,6 +169,18 @@ namespace DaBCoS
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             this.richTextBox1.WordWrap = false;
+            // 
+            // rtbSource2
+            // 
+            this.rtbSource2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbSource2.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbSource2.Location = new System.Drawing.Point(0, 0);
+            this.rtbSource2.Name = "rtbSource2";
+            this.rtbSource2.ReadOnly = true;
+            this.rtbSource2.Size = new System.Drawing.Size(704, 346);
+            this.rtbSource2.TabIndex = 4;
+            this.rtbSource2.Text = "rrrrrrr";
+            this.rtbSource2.WordWrap = false;
             // 
             // FormDetail
             // 
