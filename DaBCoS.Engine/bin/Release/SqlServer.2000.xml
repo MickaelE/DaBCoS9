@@ -31,8 +31,15 @@
 			[TO DO: look at sp_MSHelpcolumns for now]
 	-->
 	<add key="qryColumns" value="exec sp_MShelpcolumns @tablename='{0}'" />
-	
-	<!--
+  
+  <!--
+		Return the Users name
+		Note:
+			The columns returned MUST be in that order:
+	-->
+  <add key="qryUsers" value="SELECT name AS Login_Name, type_desc AS Account_Type FROM sys.server_principals WHERE TYPE IN ('U', 'S', 'G') and name not like '%##%' ORDER BY name, type_desc " />
+
+  <!--
 		Return views info:
 		Note:
 			The columns returned MUST be in that order:

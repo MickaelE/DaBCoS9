@@ -120,12 +120,7 @@ namespace DaBCoS
 		private System.Windows.Forms.ColumnHeader columnHeader20;
 		private System.Windows.Forms.Label labelTriggers;
 		private System.Windows.Forms.StatusBarPanel sbpProgress;
-		private System.Windows.Forms.TabPage tpConstraints;
-		private System.Windows.Forms.ListView lvConstraints;
-		private System.Windows.Forms.ColumnHeader columnHeader21;
-		private System.Windows.Forms.ColumnHeader columnHeader22;
-		private System.Windows.Forms.ColumnHeader columnHeader23;
-		private System.Windows.Forms.ColumnHeader columnHeader24;
+        private System.Windows.Forms.TabPage tpConstraints;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.MenuItem itemIncludeTriggers;
 		private System.Windows.Forms.MenuItem itemIncludeConstraints;
@@ -136,6 +131,21 @@ namespace DaBCoS
 		private System.Windows.Forms.MenuItem itemHelpHomePage;
 		private System.Windows.Forms.MenuItem menuCompare;
 		private System.Windows.Forms.MenuItem itemCompareStart;
+        private TabPage spSyncScript;
+        private RichTextBox syncTextBox;
+        private TabPage tpUsers;
+        private Label label2;
+        private ListView lvConstraints;
+        private ColumnHeader columnHeader21;
+        private ColumnHeader columnHeader22;
+        private ColumnHeader columnHeader23;
+        private ColumnHeader columnHeader24;
+        private ListView lvUsers;
+        private ColumnHeader columnHeader25;
+        private ColumnHeader columnHeader26;
+        private ColumnHeader columnHeader27;
+        private ColumnHeader columnHeader28;
+        private MenuItem itemIncludeUsers;
 		private System.Windows.Forms.MenuItem itemFileExportResults;
 
 		#endregion Windows Forms Variables
@@ -235,6 +245,15 @@ namespace DaBCoS
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
+            this.tpUsers = new System.Windows.Forms.TabPage();
+            this.lvUsers = new System.Windows.Forms.ListView();
+            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label2 = new System.Windows.Forms.Label();
+            this.spSyncScript = new System.Windows.Forms.TabPage();
+            this.syncTextBox = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lbLog = new System.Windows.Forms.ListBox();
             this.menuItem1 = new System.Windows.Forms.MenuItem();
@@ -258,6 +277,7 @@ namespace DaBCoS
             this.itemIncludeNone = new System.Windows.Forms.MenuItem();
             this.menuCompare = new System.Windows.Forms.MenuItem();
             this.itemCompareStart = new System.Windows.Forms.MenuItem();
+            this.itemIncludeUsers = new System.Windows.Forms.MenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.sbpMessages)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sbpProgress)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -275,6 +295,8 @@ namespace DaBCoS
             this.tpStoredProcs.SuspendLayout();
             this.tpTriggers.SuspendLayout();
             this.tpConstraints.SuspendLayout();
+            this.tpUsers.SuspendLayout();
+            this.spSyncScript.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -299,7 +321,7 @@ namespace DaBCoS
             this.tbMain.Location = new System.Drawing.Point(0, 0);
             this.tbMain.Name = "tbMain";
             this.tbMain.ShowToolTips = true;
-            this.tbMain.Size = new System.Drawing.Size(990, 47);
+            this.tbMain.Size = new System.Drawing.Size(992, 39);
             this.tbMain.TabIndex = 0;
             this.tbMain.ButtonClick += new System.Windows.Forms.ToolBarButtonClickEventHandler(this.tbMain_ButtonClick);
             // 
@@ -384,20 +406,20 @@ namespace DaBCoS
             // 
             // sbMain
             // 
-            this.sbMain.Location = new System.Drawing.Point(0, 580);
+            this.sbMain.Location = new System.Drawing.Point(0, 590);
             this.sbMain.Name = "sbMain";
             this.sbMain.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
             this.sbpMessages,
             this.sbpProgress});
             this.sbMain.ShowPanels = true;
-            this.sbMain.Size = new System.Drawing.Size(990, 19);
+            this.sbMain.Size = new System.Drawing.Size(992, 15);
             this.sbMain.TabIndex = 2;
             // 
             // sbpMessages
             // 
             this.sbpMessages.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Spring;
             this.sbpMessages.Name = "sbpMessages";
-            this.sbpMessages.Width = 869;
+            this.sbpMessages.Width = 875;
             // 
             // sbpProgress
             // 
@@ -411,9 +433,9 @@ namespace DaBCoS
             // splitter1
             // 
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter1.Location = new System.Drawing.Point(0, 454);
+            this.splitter1.Location = new System.Drawing.Point(0, 486);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(990, 5);
+            this.splitter1.Size = new System.Drawing.Size(992, 4);
             this.splitter1.TabIndex = 5;
             this.splitter1.TabStop = false;
             // 
@@ -438,9 +460,9 @@ namespace DaBCoS
             this.groupBox2.Controls.Add(this.lblServerFirst);
             this.groupBox2.Controls.Add(this.lblSource1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox2.Location = new System.Drawing.Point(743, 47);
+            this.groupBox2.Location = new System.Drawing.Point(815, 39);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(247, 407);
+            this.groupBox2.Size = new System.Drawing.Size(177, 447);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Connections";
@@ -448,9 +470,9 @@ namespace DaBCoS
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(64, 326);
+            this.button2.Location = new System.Drawing.Point(46, 268);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 28);
+            this.button2.Size = new System.Drawing.Size(85, 24);
             this.button2.TabIndex = 33;
             this.button2.Text = "Save Session";
             this.button2.Visible = false;
@@ -458,9 +480,9 @@ namespace DaBCoS
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(64, 146);
+            this.button1.Location = new System.Drawing.Point(46, 120);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 28);
+            this.button1.Size = new System.Drawing.Size(85, 23);
             this.button1.TabIndex = 32;
             this.button1.Text = "Save Session";
             this.button1.Visible = false;
@@ -468,54 +490,54 @@ namespace DaBCoS
             // pbUser1
             // 
             this.pbUser1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pbUser1.Location = new System.Drawing.Point(4, 78);
+            this.pbUser1.Location = new System.Drawing.Point(3, 64);
             this.pbUser1.Name = "pbUser1";
-            this.pbUser1.Size = new System.Drawing.Size(23, 19);
+            this.pbUser1.Size = new System.Drawing.Size(16, 16);
             this.pbUser1.TabIndex = 31;
             this.pbUser1.TabStop = false;
             // 
             // pbTable1
             // 
             this.pbTable1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pbTable1.Location = new System.Drawing.Point(4, 107);
+            this.pbTable1.Location = new System.Drawing.Point(3, 88);
             this.pbTable1.Name = "pbTable1";
-            this.pbTable1.Size = new System.Drawing.Size(23, 19);
+            this.pbTable1.Size = new System.Drawing.Size(16, 16);
             this.pbTable1.TabIndex = 30;
             this.pbTable1.TabStop = false;
             // 
             // pbTable2
             // 
             this.pbTable2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pbTable2.Location = new System.Drawing.Point(4, 257);
+            this.pbTable2.Location = new System.Drawing.Point(3, 212);
             this.pbTable2.Name = "pbTable2";
-            this.pbTable2.Size = new System.Drawing.Size(23, 20);
+            this.pbTable2.Size = new System.Drawing.Size(16, 16);
             this.pbTable2.TabIndex = 29;
             this.pbTable2.TabStop = false;
             // 
             // pbUser2
             // 
             this.pbUser2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pbUser2.Location = new System.Drawing.Point(4, 287);
+            this.pbUser2.Location = new System.Drawing.Point(3, 236);
             this.pbUser2.Name = "pbUser2";
-            this.pbUser2.Size = new System.Drawing.Size(23, 19);
+            this.pbUser2.Size = new System.Drawing.Size(16, 16);
             this.pbUser2.TabIndex = 28;
             this.pbUser2.TabStop = false;
             // 
             // pbDB2
             // 
             this.pbDB2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pbDB2.Location = new System.Drawing.Point(4, 228);
+            this.pbDB2.Location = new System.Drawing.Point(3, 188);
             this.pbDB2.Name = "pbDB2";
-            this.pbDB2.Size = new System.Drawing.Size(23, 20);
+            this.pbDB2.Size = new System.Drawing.Size(16, 16);
             this.pbDB2.TabIndex = 27;
             this.pbDB2.TabStop = false;
             // 
             // pbDB1
             // 
             this.pbDB1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pbDB1.Location = new System.Drawing.Point(4, 49);
+            this.pbDB1.Location = new System.Drawing.Point(3, 40);
             this.pbDB1.Name = "pbDB1";
-            this.pbDB1.Size = new System.Drawing.Size(23, 19);
+            this.pbDB1.Size = new System.Drawing.Size(16, 16);
             this.pbDB1.TabIndex = 26;
             this.pbDB1.TabStop = false;
             // 
@@ -524,9 +546,9 @@ namespace DaBCoS
             this.lblUserSecond.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUserSecond.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserSecond.Location = new System.Drawing.Point(28, 286);
+            this.lblUserSecond.Location = new System.Drawing.Point(20, 236);
             this.lblUserSecond.Name = "lblUserSecond";
-            this.lblUserSecond.Size = new System.Drawing.Size(213, 20);
+            this.lblUserSecond.Size = new System.Drawing.Size(152, 16);
             this.lblUserSecond.TabIndex = 25;
             // 
             // lblUserFirst
@@ -534,18 +556,18 @@ namespace DaBCoS
             this.lblUserFirst.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblUserFirst.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserFirst.Location = new System.Drawing.Point(28, 107);
+            this.lblUserFirst.Location = new System.Drawing.Point(20, 88);
             this.lblUserFirst.Name = "lblUserFirst";
-            this.lblUserFirst.Size = new System.Drawing.Size(213, 19);
+            this.lblUserFirst.Size = new System.Drawing.Size(152, 16);
             this.lblUserFirst.TabIndex = 24;
             // 
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 365);
+            this.label3.Location = new System.Drawing.Point(3, 412);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(241, 19);
+            this.label3.Size = new System.Drawing.Size(171, 15);
             this.label3.TabIndex = 23;
             this.label3.Text = "Current operation:";
             // 
@@ -553,9 +575,9 @@ namespace DaBCoS
             // 
             this.pbState.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pbState.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pbState.Location = new System.Drawing.Point(3, 384);
+            this.pbState.Location = new System.Drawing.Point(3, 427);
             this.pbState.Name = "pbState";
-            this.pbState.Size = new System.Drawing.Size(241, 20);
+            this.pbState.Size = new System.Drawing.Size(171, 17);
             this.pbState.Step = 1;
             this.pbState.TabIndex = 22;
             // 
@@ -564,9 +586,9 @@ namespace DaBCoS
             this.lblDBSecond.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDBSecond.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDBSecond.Location = new System.Drawing.Point(28, 303);
+            this.lblDBSecond.Location = new System.Drawing.Point(20, 250);
             this.lblDBSecond.Name = "lblDBSecond";
-            this.lblDBSecond.Size = new System.Drawing.Size(213, 20);
+            this.lblDBSecond.Size = new System.Drawing.Size(152, 16);
             this.lblDBSecond.TabIndex = 21;
             // 
             // lblServerSecond
@@ -574,9 +596,9 @@ namespace DaBCoS
             this.lblServerSecond.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblServerSecond.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServerSecond.Location = new System.Drawing.Point(28, 244);
+            this.lblServerSecond.Location = new System.Drawing.Point(20, 201);
             this.lblServerSecond.Name = "lblServerSecond";
-            this.lblServerSecond.Size = new System.Drawing.Size(213, 20);
+            this.lblServerSecond.Size = new System.Drawing.Size(152, 16);
             this.lblServerSecond.TabIndex = 20;
             // 
             // lblSource2
@@ -585,9 +607,9 @@ namespace DaBCoS
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSource2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblSource2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSource2.Location = new System.Drawing.Point(1, 195);
+            this.lblSource2.Location = new System.Drawing.Point(1, 161);
             this.lblSource2.Name = "lblSource2";
-            this.lblSource2.Size = new System.Drawing.Size(235, 19);
+            this.lblSource2.Size = new System.Drawing.Size(168, 15);
             this.lblSource2.TabIndex = 19;
             this.lblSource2.Text = "Source 2";
             // 
@@ -596,9 +618,9 @@ namespace DaBCoS
             this.lblDBFirst.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDBFirst.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDBFirst.Location = new System.Drawing.Point(28, 129);
+            this.lblDBFirst.Location = new System.Drawing.Point(20, 106);
             this.lblDBFirst.Name = "lblDBFirst";
-            this.lblDBFirst.Size = new System.Drawing.Size(213, 19);
+            this.lblDBFirst.Size = new System.Drawing.Size(152, 16);
             this.lblDBFirst.TabIndex = 18;
             // 
             // lblServerFirst
@@ -606,27 +628,27 @@ namespace DaBCoS
             this.lblServerFirst.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblServerFirst.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServerFirst.Location = new System.Drawing.Point(28, 70);
+            this.lblServerFirst.Location = new System.Drawing.Point(20, 58);
             this.lblServerFirst.Name = "lblServerFirst";
-            this.lblServerFirst.Size = new System.Drawing.Size(213, 20);
+            this.lblServerFirst.Size = new System.Drawing.Size(152, 16);
             this.lblServerFirst.TabIndex = 17;
             // 
             // lblSource1
             // 
             this.lblSource1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lblSource1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSource1.Location = new System.Drawing.Point(4, 19);
+            this.lblSource1.Location = new System.Drawing.Point(3, 16);
             this.lblSource1.Name = "lblSource1";
-            this.lblSource1.Size = new System.Drawing.Size(235, 20);
+            this.lblSource1.Size = new System.Drawing.Size(168, 16);
             this.lblSource1.TabIndex = 16;
             this.lblSource1.Text = "Source 1";
             // 
             // splitter2
             // 
             this.splitter2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter2.Location = new System.Drawing.Point(738, 47);
+            this.splitter2.Location = new System.Drawing.Point(812, 39);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(5, 407);
+            this.splitter2.Size = new System.Drawing.Size(3, 447);
             this.splitter2.TabIndex = 12;
             this.splitter2.TabStop = false;
             // 
@@ -662,9 +684,9 @@ namespace DaBCoS
             // 
             this.groupBox1.Controls.Add(this.tcMain);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 47);
+            this.groupBox1.Location = new System.Drawing.Point(0, 39);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(738, 407);
+            this.groupBox1.Size = new System.Drawing.Size(812, 447);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Database";
@@ -678,21 +700,23 @@ namespace DaBCoS
             this.tcMain.Controls.Add(this.tpStoredProcs);
             this.tcMain.Controls.Add(this.tpTriggers);
             this.tcMain.Controls.Add(this.tpConstraints);
+            this.tcMain.Controls.Add(this.tpUsers);
+            this.tcMain.Controls.Add(this.spSyncScript);
             this.tcMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcMain.HotTrack = true;
-            this.tcMain.Location = new System.Drawing.Point(3, 20);
+            this.tcMain.Location = new System.Drawing.Point(3, 17);
             this.tcMain.Name = "tcMain";
             this.tcMain.SelectedIndex = 0;
-            this.tcMain.Size = new System.Drawing.Size(732, 384);
+            this.tcMain.Size = new System.Drawing.Size(806, 427);
             this.tcMain.TabIndex = 14;
             // 
             // tpTables
             // 
             this.tpTables.Controls.Add(this.lvTables);
             this.tpTables.Controls.Add(this.label8);
-            this.tpTables.Location = new System.Drawing.Point(4, 29);
+            this.tpTables.Location = new System.Drawing.Point(4, 25);
             this.tpTables.Name = "tpTables";
-            this.tpTables.Size = new System.Drawing.Size(724, 351);
+            this.tpTables.Size = new System.Drawing.Size(798, 398);
             this.tpTables.TabIndex = 0;
             this.tpTables.Text = "Tables";
             // 
@@ -710,10 +734,10 @@ namespace DaBCoS
             this.lvTables.FullRowSelect = true;
             this.lvTables.GridLines = true;
             this.lvTables.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lvTables.Location = new System.Drawing.Point(0, 19);
+            this.lvTables.Location = new System.Drawing.Point(0, 16);
             this.lvTables.MultiSelect = false;
             this.lvTables.Name = "lvTables";
-            this.lvTables.Size = new System.Drawing.Size(724, 332);
+            this.lvTables.Size = new System.Drawing.Size(798, 382);
             this.lvTables.TabIndex = 2;
             this.lvTables.UseCompatibleStateImageBehavior = false;
             this.lvTables.View = System.Windows.Forms.View.Details;
@@ -746,7 +770,7 @@ namespace DaBCoS
             this.label8.Dock = System.Windows.Forms.DockStyle.Top;
             this.label8.Location = new System.Drawing.Point(0, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(724, 19);
+            this.label8.Size = new System.Drawing.Size(798, 16);
             this.label8.TabIndex = 3;
             this.label8.Text = "Tables";
             // 
@@ -754,9 +778,9 @@ namespace DaBCoS
             // 
             this.tpFunctions.Controls.Add(this.lvFunctions);
             this.tpFunctions.Controls.Add(this.label4);
-            this.tpFunctions.Location = new System.Drawing.Point(4, 28);
+            this.tpFunctions.Location = new System.Drawing.Point(4, 25);
             this.tpFunctions.Name = "tpFunctions";
-            this.tpFunctions.Size = new System.Drawing.Size(724, 354);
+            this.tpFunctions.Size = new System.Drawing.Size(798, 398);
             this.tpFunctions.TabIndex = 3;
             this.tpFunctions.Text = "Functions";
             this.tpFunctions.Visible = false;
@@ -774,10 +798,10 @@ namespace DaBCoS
             this.lvFunctions.FullRowSelect = true;
             this.lvFunctions.GridLines = true;
             this.lvFunctions.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lvFunctions.Location = new System.Drawing.Point(0, 19);
+            this.lvFunctions.Location = new System.Drawing.Point(0, 16);
             this.lvFunctions.MultiSelect = false;
             this.lvFunctions.Name = "lvFunctions";
-            this.lvFunctions.Size = new System.Drawing.Size(724, 335);
+            this.lvFunctions.Size = new System.Drawing.Size(798, 382);
             this.lvFunctions.TabIndex = 4;
             this.lvFunctions.UseCompatibleStateImageBehavior = false;
             this.lvFunctions.View = System.Windows.Forms.View.Details;
@@ -810,7 +834,7 @@ namespace DaBCoS
             this.label4.Dock = System.Windows.Forms.DockStyle.Top;
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(724, 19);
+            this.label4.Size = new System.Drawing.Size(798, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Functions";
             // 
@@ -818,9 +842,9 @@ namespace DaBCoS
             // 
             this.tpViews.Controls.Add(this.lvViews);
             this.tpViews.Controls.Add(this.label6);
-            this.tpViews.Location = new System.Drawing.Point(4, 28);
+            this.tpViews.Location = new System.Drawing.Point(4, 25);
             this.tpViews.Name = "tpViews";
-            this.tpViews.Size = new System.Drawing.Size(724, 354);
+            this.tpViews.Size = new System.Drawing.Size(798, 398);
             this.tpViews.TabIndex = 1;
             this.tpViews.Text = "Views";
             this.tpViews.Visible = false;
@@ -838,10 +862,10 @@ namespace DaBCoS
             this.lvViews.FullRowSelect = true;
             this.lvViews.GridLines = true;
             this.lvViews.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lvViews.Location = new System.Drawing.Point(0, 19);
+            this.lvViews.Location = new System.Drawing.Point(0, 16);
             this.lvViews.MultiSelect = false;
             this.lvViews.Name = "lvViews";
-            this.lvViews.Size = new System.Drawing.Size(724, 335);
+            this.lvViews.Size = new System.Drawing.Size(798, 382);
             this.lvViews.TabIndex = 3;
             this.lvViews.UseCompatibleStateImageBehavior = false;
             this.lvViews.View = System.Windows.Forms.View.Details;
@@ -874,7 +898,7 @@ namespace DaBCoS
             this.label6.Dock = System.Windows.Forms.DockStyle.Top;
             this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(724, 19);
+            this.label6.Size = new System.Drawing.Size(798, 16);
             this.label6.TabIndex = 4;
             this.label6.Text = "Views";
             // 
@@ -882,9 +906,9 @@ namespace DaBCoS
             // 
             this.tpStoredProcs.Controls.Add(this.lvProcedures);
             this.tpStoredProcs.Controls.Add(this.label5);
-            this.tpStoredProcs.Location = new System.Drawing.Point(4, 28);
+            this.tpStoredProcs.Location = new System.Drawing.Point(4, 25);
             this.tpStoredProcs.Name = "tpStoredProcs";
-            this.tpStoredProcs.Size = new System.Drawing.Size(724, 354);
+            this.tpStoredProcs.Size = new System.Drawing.Size(798, 398);
             this.tpStoredProcs.TabIndex = 2;
             this.tpStoredProcs.Text = "Stored Procedures";
             this.tpStoredProcs.Visible = false;
@@ -902,10 +926,10 @@ namespace DaBCoS
             this.lvProcedures.FullRowSelect = true;
             this.lvProcedures.GridLines = true;
             this.lvProcedures.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lvProcedures.Location = new System.Drawing.Point(0, 19);
+            this.lvProcedures.Location = new System.Drawing.Point(0, 16);
             this.lvProcedures.MultiSelect = false;
             this.lvProcedures.Name = "lvProcedures";
-            this.lvProcedures.Size = new System.Drawing.Size(724, 335);
+            this.lvProcedures.Size = new System.Drawing.Size(798, 382);
             this.lvProcedures.TabIndex = 4;
             this.lvProcedures.UseCompatibleStateImageBehavior = false;
             this.lvProcedures.View = System.Windows.Forms.View.Details;
@@ -938,7 +962,7 @@ namespace DaBCoS
             this.label5.Dock = System.Windows.Forms.DockStyle.Top;
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(724, 19);
+            this.label5.Size = new System.Drawing.Size(798, 16);
             this.label5.TabIndex = 5;
             this.label5.Text = "Stored Procedures";
             // 
@@ -946,9 +970,9 @@ namespace DaBCoS
             // 
             this.tpTriggers.Controls.Add(this.lvTriggers);
             this.tpTriggers.Controls.Add(this.labelTriggers);
-            this.tpTriggers.Location = new System.Drawing.Point(4, 28);
+            this.tpTriggers.Location = new System.Drawing.Point(4, 25);
             this.tpTriggers.Name = "tpTriggers";
-            this.tpTriggers.Size = new System.Drawing.Size(724, 354);
+            this.tpTriggers.Size = new System.Drawing.Size(798, 398);
             this.tpTriggers.TabIndex = 4;
             this.tpTriggers.Text = "Triggers";
             // 
@@ -965,10 +989,10 @@ namespace DaBCoS
             this.lvTriggers.FullRowSelect = true;
             this.lvTriggers.GridLines = true;
             this.lvTriggers.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lvTriggers.Location = new System.Drawing.Point(0, 19);
+            this.lvTriggers.Location = new System.Drawing.Point(0, 16);
             this.lvTriggers.MultiSelect = false;
             this.lvTriggers.Name = "lvTriggers";
-            this.lvTriggers.Size = new System.Drawing.Size(724, 335);
+            this.lvTriggers.Size = new System.Drawing.Size(798, 382);
             this.lvTriggers.TabIndex = 6;
             this.lvTriggers.UseCompatibleStateImageBehavior = false;
             this.lvTriggers.View = System.Windows.Forms.View.Details;
@@ -1001,7 +1025,7 @@ namespace DaBCoS
             this.labelTriggers.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelTriggers.Location = new System.Drawing.Point(0, 0);
             this.labelTriggers.Name = "labelTriggers";
-            this.labelTriggers.Size = new System.Drawing.Size(724, 19);
+            this.labelTriggers.Size = new System.Drawing.Size(798, 16);
             this.labelTriggers.TabIndex = 7;
             this.labelTriggers.Text = "Triggers";
             // 
@@ -1009,9 +1033,9 @@ namespace DaBCoS
             // 
             this.tpConstraints.Controls.Add(this.lvConstraints);
             this.tpConstraints.Controls.Add(this.label1);
-            this.tpConstraints.Location = new System.Drawing.Point(4, 28);
+            this.tpConstraints.Location = new System.Drawing.Point(4, 25);
             this.tpConstraints.Name = "tpConstraints";
-            this.tpConstraints.Size = new System.Drawing.Size(724, 354);
+            this.tpConstraints.Size = new System.Drawing.Size(798, 398);
             this.tpConstraints.TabIndex = 5;
             this.tpConstraints.Text = "Constraints";
             // 
@@ -1028,15 +1052,13 @@ namespace DaBCoS
             this.lvConstraints.FullRowSelect = true;
             this.lvConstraints.GridLines = true;
             this.lvConstraints.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.lvConstraints.Location = new System.Drawing.Point(0, 19);
+            this.lvConstraints.Location = new System.Drawing.Point(0, 16);
             this.lvConstraints.MultiSelect = false;
             this.lvConstraints.Name = "lvConstraints";
-            this.lvConstraints.Size = new System.Drawing.Size(724, 335);
-            this.lvConstraints.TabIndex = 8;
+            this.lvConstraints.Size = new System.Drawing.Size(798, 382);
+            this.lvConstraints.TabIndex = 10;
             this.lvConstraints.UseCompatibleStateImageBehavior = false;
             this.lvConstraints.View = System.Windows.Forms.View.Details;
-            this.lvConstraints.DoubleClick += new System.EventHandler(this.lvConstraints_DoubleClick);
-            this.lvConstraints.Resize += new System.EventHandler(this.lvAll_Resize);
             // 
             // columnHeader21
             // 
@@ -1064,17 +1086,91 @@ namespace DaBCoS
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(724, 19);
+            this.label1.Size = new System.Drawing.Size(798, 16);
             this.label1.TabIndex = 9;
             this.label1.Text = "Constraints";
+            // 
+            // tpUsers
+            // 
+            this.tpUsers.Controls.Add(this.lvUsers);
+            this.tpUsers.Controls.Add(this.label2);
+            this.tpUsers.Location = new System.Drawing.Point(4, 25);
+            this.tpUsers.Name = "tpUsers";
+            this.tpUsers.Size = new System.Drawing.Size(798, 398);
+            this.tpUsers.TabIndex = 7;
+            this.tpUsers.Text = "Users";
+            this.tpUsers.UseVisualStyleBackColor = true;
+            // 
+            // lvUsers
+            // 
+            this.lvUsers.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader25,
+            this.columnHeader26,
+            this.columnHeader27,
+            this.columnHeader28});
+            this.lvUsers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvUsers.GridLines = true;
+            this.lvUsers.Location = new System.Drawing.Point(0, 16);
+            this.lvUsers.Name = "lvUsers";
+            this.lvUsers.Size = new System.Drawing.Size(798, 382);
+            this.lvUsers.TabIndex = 11;
+            this.lvUsers.UseCompatibleStateImageBehavior = false;
+            this.lvUsers.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader25
+            // 
+            this.columnHeader25.Text = "Database 1";
+            this.columnHeader25.Width = 200;
+            // 
+            // columnHeader26
+            // 
+            this.columnHeader26.Text = "State";
+            // 
+            // columnHeader27
+            // 
+            this.columnHeader27.Text = "Actions";
+            // 
+            // columnHeader28
+            // 
+            this.columnHeader28.Text = "Database 2";
+            this.columnHeader28.Width = 200;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(798, 16);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Users";
+            // 
+            // spSyncScript
+            // 
+            this.spSyncScript.Controls.Add(this.syncTextBox);
+            this.spSyncScript.Location = new System.Drawing.Point(4, 25);
+            this.spSyncScript.Name = "spSyncScript";
+            this.spSyncScript.Size = new System.Drawing.Size(798, 398);
+            this.spSyncScript.TabIndex = 6;
+            this.spSyncScript.Text = "Sync Script";
+            this.spSyncScript.UseVisualStyleBackColor = true;
+            // 
+            // syncTextBox
+            // 
+            this.syncTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.syncTextBox.Location = new System.Drawing.Point(0, 0);
+            this.syncTextBox.Name = "syncTextBox";
+            this.syncTextBox.Size = new System.Drawing.Size(798, 398);
+            this.syncTextBox.TabIndex = 0;
+            this.syncTextBox.Text = "";
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lbLog);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox3.Location = new System.Drawing.Point(0, 459);
+            this.groupBox3.Location = new System.Drawing.Point(0, 490);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(990, 121);
+            this.groupBox3.Size = new System.Drawing.Size(992, 100);
             this.groupBox3.TabIndex = 17;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Log";
@@ -1083,10 +1179,9 @@ namespace DaBCoS
             // 
             this.lbLog.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbLog.IntegralHeight = false;
-            this.lbLog.ItemHeight = 17;
-            this.lbLog.Location = new System.Drawing.Point(3, 20);
+            this.lbLog.Location = new System.Drawing.Point(3, 17);
             this.lbLog.Name = "lbLog";
-            this.lbLog.Size = new System.Drawing.Size(984, 98);
+            this.lbLog.Size = new System.Drawing.Size(986, 80);
             this.lbLog.TabIndex = 2;
             // 
             // menuItem1
@@ -1159,6 +1254,7 @@ namespace DaBCoS
             this.itemIncludeProcs,
             this.itemIncludeTriggers,
             this.itemIncludeConstraints,
+            this.itemIncludeUsers,
             this.menuItem9,
             this.itemIncludeAll,
             this.itemIncludeNone});
@@ -1208,18 +1304,18 @@ namespace DaBCoS
             // 
             // menuItem9
             // 
-            this.menuItem9.Index = 6;
+            this.menuItem9.Index = 7;
             this.menuItem9.Text = "-";
             // 
             // itemIncludeAll
             // 
-            this.itemIncludeAll.Index = 7;
+            this.itemIncludeAll.Index = 8;
             this.itemIncludeAll.Text = "Select &All";
             this.itemIncludeAll.Click += new System.EventHandler(this.itemIncludeAll_Click);
             // 
             // itemIncludeNone
             // 
-            this.itemIncludeNone.Index = 8;
+            this.itemIncludeNone.Index = 9;
             this.itemIncludeNone.Text = "&Unselect All";
             this.itemIncludeNone.Click += new System.EventHandler(this.itemIncludeNone_Click);
             // 
@@ -1237,10 +1333,16 @@ namespace DaBCoS
             this.itemCompareStart.Text = "&Start compare";
             this.itemCompareStart.Click += new System.EventHandler(this.itemCompareStart_Click);
             // 
+            // itemIncludeUsers
+            // 
+            this.itemIncludeUsers.Checked = true;
+            this.itemIncludeUsers.Index = 6;
+            this.itemIncludeUsers.Text = "&Users";
+            // 
             // FormMain
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(7, 17);
-            this.ClientSize = new System.Drawing.Size(990, 599);
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 14);
+            this.ClientSize = new System.Drawing.Size(992, 605);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.splitter2);
             this.Controls.Add(this.groupBox2);
@@ -1251,7 +1353,7 @@ namespace DaBCoS
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Menu = this.mmMain;
-            this.MinimumSize = new System.Drawing.Size(1008, 644);
+            this.MinimumSize = new System.Drawing.Size(720, 530);
             this.Name = "FormMain";
             this.Text = "DaBCoS";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.FormMain_Closing);
@@ -1273,6 +1375,8 @@ namespace DaBCoS
             this.tpStoredProcs.ResumeLayout(false);
             this.tpTriggers.ResumeLayout(false);
             this.tpConstraints.ResumeLayout(false);
+            this.tpUsers.ResumeLayout(false);
+            this.spSyncScript.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1289,6 +1393,7 @@ namespace DaBCoS
 		private bool _includeTables = true;
 		private bool _includeTriggers = true;
 		private bool _includeViews = true;
+        private bool _includeUsers = true;
 
 		private SqlServer _databaseLeft;
 		private SqlServer _databaseRight;
@@ -1362,7 +1467,7 @@ namespace DaBCoS
 			}
             if (e.Button == tbbSynchronize)
             {
-               // Compare();
+                syncronize();
             }
 		}
 
@@ -1663,6 +1768,7 @@ namespace DaBCoS
 			itemIncludeTables.Checked = checkedStatus;
 			itemIncludeTriggers.Checked = checkedStatus;
 			itemIncludeViews.Checked = checkedStatus;
+            itemIncludeUsers.Checked = checkedStatus;
 
 			// Update the included vars
 			SetIncludeStatus();
@@ -1676,6 +1782,7 @@ namespace DaBCoS
 			_includeTables = itemIncludeTables.Checked;
 			_includeTriggers = itemIncludeTriggers.Checked;
 			_includeViews = itemIncludeViews.Checked;
+            _includeUsers = itemIncludeUsers.Checked;
 		}
 
 		private void itemFileExportResults_Click(object sender, System.EventArgs e)
@@ -1933,6 +2040,7 @@ namespace DaBCoS
 
 			tbbCompare.Enabled = (tbbDisconnect.Enabled & tbbDisconnect2.Enabled);
 			itemCompareStart.Enabled = (tbbDisconnect.Enabled & tbbDisconnect2.Enabled);
+            tbbSynchronize.Enabled = (tbbDisconnect.Enabled & tbbDisconnect2.Enabled);
 		}
 
 
@@ -1992,7 +2100,59 @@ namespace DaBCoS
 					wndDatabaseSelection.Dispose();
 			}
 		}
+        
+       /// <summary>
+       /// Create a syncscript.
+       /// </summary>
+        private void syncronize()
+        {
+            // Emty resultwindow.
+            syncTextBox.Clear();
 
+            _dbDifferences = new DatabaseDifferences();
+            Engine.Compare dbCompare = new Compare();
+            dbCompare.CompareSchemaStarted += new DaBCoS.Engine.Compare.CompareSchemaStartedDelegate(this.dbCompare_CompareSchemaStarted);
+            dbCompare.CompareSchemaFinished += new DaBCoS.Engine.Compare.CompareSchemaFinishedDelegate(this.dbCompare_CompareSchemaFinished);
+            ShowInfoMessage("Starting create syncroninizing script...");
+
+            // Get the table differences
+            if (_includeTables)
+            {
+                _dbDifferences.TableDifferences = dbCompare.CompareTables(_databaseLeft, _databaseRight);
+                scriptDifferences(_dbDifferences.TableDifferences);
+
+            }
+            String incstance = _databaseLeft.Connection.DataSource.ToString();
+            ShowInfoMessage("Syncroninizing finnished.");
+        }
+        public void scriptDifferences(Engine.DifferenceCollection differences)
+        {
+            // If there is no difference, theres are no meaing to continue.
+            if (differences.Count == 0) 
+                return;
+            //Prepare file for write.
+           //[DaBCoS.Engine.TableDifference]	{DaBCoS.Engine.TableDifference}	DaBCoS.Engine.TableDifference
+
+            // Loop throught  the differences and create script.
+            foreach (TableDifference difference in differences)
+            {
+                if (difference.Outcome != Difference.DifferenceOutcome.Same)
+                {
+                    if (difference.IsLeftDifferent)
+                    {
+                        syncTextBox.AppendText("use ");
+                        for (int i = 0; i < difference.FieldDifferences.Count; i++)
+                            syncTextBox.AppendText(CreateSync.addTableRowDDL(difference.Name, difference.FieldDifferences[i].Name));
+                    }
+                    else
+                    {
+                        for (int i = 0; i < difference.FieldDifferences.Count; i++)
+                             syncTextBox.AppendText(CreateSync.addTableRowDDL(difference.Name, difference.FieldDifferences[i].Name));
+                    }
+                }
+            }
+
+        }
 		/// <summary>
 		/// Compare two databases and show the differences
 		/// </summary>
@@ -2010,6 +2170,14 @@ namespace DaBCoS
 			ShowInfoMessage("Starting compare...");	
 			
 			ResetLists();
+
+            // Get the user differences
+            if (_includeUsers)
+            {
+                _dbDifferences.UserDifferences = dbCompare.CompareSchemaObjects(_databaseLeft, _databaseRight, Difference.DatabaseObjectType.Users);
+                ShowDifferences(lvUsers, _dbDifferences.UserDifferences);
+                infoMessage += "Users (" + (_dbDifferences.UserDifferences.Count - _dbDifferences.UserDifferences.CountByOutcome(Difference.DifferenceOutcome.Same)).ToString() + " of " + _dbDifferences.UserDifferences.Count.ToString() + " diff)";
+            }
 
 			// Get the constraint differences
 			if (_includeConstraints)

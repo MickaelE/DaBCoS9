@@ -24,3 +24,16 @@
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.Results.resources
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.FormSelectDatabase.resources
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.csproj.GenerateResource.Cache
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\bin\Debug\DaBCoS.exe.config
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.exe
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.pdb
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\bin\Debug\DaBCoS.exe
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\bin\Debug\DaBCoS.pdb
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.csprojResolveAssemblyReference.cache
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.FormAbout.resources
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.FormDetail.resources
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.FormLogin.resources
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.FormMain.resources
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.Results.resources
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.FormSelectDatabase.resources
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Debug\DaBCoS.csproj.GenerateResource.Cache

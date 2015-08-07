@@ -3,19 +3,23 @@
   <LoginPool>
     <SqlLogin>
       <Address>lucatopentest.lu.se</Address>
-      <Login>ldc-mee</Login>
+      <Login>ldc-mee </Login>
       <IsLastUsed>false</IsLastUsed>
+    </SqlLogin>
+    <SqlLogin>
+      <Address>lucatopentest.lu.se</Address>
+      <Login>ldc-mee</Login>
+      <IsLastUsed>true</IsLastUsed>
     </SqlLogin>
     <SqlLogin>
       <Address>lucatopen.lu.se</Address>
       <Login>ldc-mee</Login>
-      <IsLastUsed>true</IsLastUsed>
+      <IsLastUsed>false</IsLastUsed>
     </SqlLogin>
     <SqlLogin>
       <Address>lucatopen.lu.s</Address>
       <Login>ldc-mee</Login>
       <IsLastUsed>false</IsLastUsed>
     </SqlLogin>
-    <SqlLogin xsi:nil="true" />
   </LoginPool>
 </SqlLoginPool>

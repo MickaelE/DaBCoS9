@@ -35,7 +35,8 @@ namespace DaBCoS.Engine
 			Function,
 			Field,
 			Trigger,
-			Constraint
+			Constraint,
+            Users
 		}
 
 		public enum DifferenceOutcome

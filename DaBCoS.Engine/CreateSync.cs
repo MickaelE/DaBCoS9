@@ -12,14 +12,14 @@ namespace DaBCoS.Engine
             String RetVal;
             String AlterStatement = "Alter table " + Table;
             String AddStatement = " ADD " + source;
-            RetVal = AlterStatement + AddStatement + ";";
+            RetVal = AlterStatement + AddStatement + ";\n";
             return RetVal;
         }
         public static String addViewRowDDL(String View, String source)
         {
             String RetVal;
             String AlterStatement = "Alter View " + View;
-            String AddStatement = " ADD " + source;
+            String AddStatement = " AS " + source;
             RetVal = AlterStatement + AddStatement + ";";
             return RetVal;
         }

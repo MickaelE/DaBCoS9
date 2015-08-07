@@ -2,3 +2,7 @@
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.Engine\bin\Release\DifferenceEngine.dll
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.Engine\obj\Release\DaBCoS.Engine.csprojResolveAssemblyReference.cache
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.Engine\obj\Release\DaBCoS.Engine.dll
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.Engine\bin\Release\DaBCoS.Engine.dll
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.Engine\bin\Release\DifferenceEngine.dll
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.Engine\obj\Release\DaBCoS.Engine.csprojResolveAssemblyReference.cache
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.Engine\obj\Release\DaBCoS.Engine.dll

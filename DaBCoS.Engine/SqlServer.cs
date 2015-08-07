@@ -299,6 +299,9 @@ namespace DaBCoS.Engine
 				case Difference.DatabaseObjectType.View:
 					xmlCommandName = "qryViews";
 					break;
+                case Difference.DatabaseObjectType.Users:
+                    xmlCommandName = "qryUsers";
+                    break;
 				default:
 					throw new Exception("Unknown database object type");
 			}
@@ -462,8 +465,30 @@ namespace DaBCoS.Engine
 			sqlCmd.Dispose();
 
 			return alResult;
-		}	
+		}
+        /// <summary>
+        ///  Load all the users into an array list
+        /// </summary>
+        /// <returns>An array of string containing all the users found</returns>
+        public ArrayList GetUsers()
+        {
+            ArrayList alResult = new ArrayList();
 
+            SqlCommand sqlCmd = new SqlCommand(GetSqlCommand("qryUsers"), conn);
+
+            SqlDataReader sqlDR;
+            sqlDR = sqlCmd.ExecuteReader();
+
+            while (sqlDR.Read())
+            {
+                alResult.Add(sqlDR[0].ToString());
+            }
+
+            sqlDR.Close();
+            sqlCmd.Dispose();
+
+            return alResult;
+        }	
 		/// <summary>
 		/// Load the stored procedure list
 		/// </summary>

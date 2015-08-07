@@ -8,3 +8,12 @@
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.UnitTest.Database\bin\Debug\dbpProjectName.pdb
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Debug\dbpProjectName.dll
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Debug\dbpProjectName.pdb
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\bin\Debug\DaBCoS.UnitTest.Database.dacpac
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\bin\Debug\dbpProjectName.dll
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\bin\Debug\dbpProjectName.pdb
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Debug\Model.xml
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Debug\refactor.xml
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Debug\postdeploy.sql
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Debug\predeploy.sql
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Debug\dbpProjectName.dll
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Debug\dbpProjectName.pdb

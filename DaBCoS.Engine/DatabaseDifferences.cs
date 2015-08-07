@@ -17,6 +17,7 @@ namespace DaBCoS.Engine
 
 		TableDifferenceCollection _tableDiffCollection = new TableDifferenceCollection();
 		DifferenceCollection _constraintDiffCollection = new DifferenceCollection();
+        DifferenceCollection _userDiffCollection = new DifferenceCollection();
 		DifferenceCollection _functionDiffCollection = new DifferenceCollection();
 		DifferenceCollection _storedProcDiffCollection = new DifferenceCollection();
 		DifferenceCollection _triggerDiffCollection = new DifferenceCollection();
@@ -131,6 +132,17 @@ namespace DaBCoS.Engine
 
 		#region Properties
 
+        public DifferenceCollection UserDifferences
+        {
+            get
+            {
+                return _userDiffCollection;
+            }
+            set
+            {
+                _userDiffCollection = value;
+            }
+        }
 		public DifferenceCollection ConstraintDifferences
 		{
 			get

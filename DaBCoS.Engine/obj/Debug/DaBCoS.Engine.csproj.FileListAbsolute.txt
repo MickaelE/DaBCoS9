@@ -8,3 +8,8 @@
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.Engine\obj\Debug\DaBCoS.Engine.csprojResolveAssemblyReference.cache
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.Engine\obj\Debug\DaBCoS.Engine.dll
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.Engine\obj\Debug\DaBCoS.Engine.pdb
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\bin\Debug\DaBCoS.Engine.dll
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\bin\Debug\DaBCoS.Engine.pdb
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.Engine\obj\Debug\DaBCoS.Engine.csprojResolveAssemblyReference.cache
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.Engine\obj\Debug\DaBCoS.Engine.dll
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.Engine\obj\Debug\DaBCoS.Engine.pdb

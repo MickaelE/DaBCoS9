@@ -3,3 +3,6 @@
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.UnitTest.Database\bin\Release\dbpProjectName.pdb
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Release\dbpProjectName.dll
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Release\dbpProjectName.pdb
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\bin\Release\DaBCoS.UnitTest.Database.dacpac
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Release\dbpProjectName.dll
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS.UnitTest.Database\obj\Release\dbpProjectName.pdb

@@ -2,3 +2,8 @@
 \\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\bin\Debug\DifferenceEngine.pdb
 \\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DifferenceEngine\obj\Debug\DifferenceEngine.dll
 \\vmware-host\Shared Folders\ldc-mee On My Mac\Privat\DaBCoS3\DifferenceEngine\obj\Debug\DifferenceEngine.pdb
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\bin\Debug\DifferenceEngine.dll
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\bin\Debug\DifferenceEngine.pdb
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DifferenceEngine\obj\Debug\DifferenceEngine.csprojResolveAssemblyReference.cache
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DifferenceEngine\obj\Debug\DifferenceEngine.dll
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DifferenceEngine\obj\Debug\DifferenceEngine.pdb
