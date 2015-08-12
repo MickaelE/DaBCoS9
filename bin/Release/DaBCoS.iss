@@ -36,7 +36,6 @@ Source: "DaBCoS.Engine.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "DaBCoS.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "DaBCoS.exe.config"; DestDir: "{app}"; Flags: ignoreversion
 Source: "DaBCoS.exe.formdata.xml"; DestDir: "{app}"; Flags: ignoreversion; Permissions: everyone-full
-Source: "dabcos-cmd.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "DifferenceEngine.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "General.VersionDetect.xml"; DestDir: "{app}"; Flags: ignoreversion
 Source: "SqlLogins.xml"; DestDir: "{app}"; Flags: ignoreversion; Permissions: everyone-full

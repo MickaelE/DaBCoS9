@@ -4,9 +4,3 @@
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DabCoS.UnitTest\bin\Release\DifferenceEngine.dll
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DabCoS.UnitTest\obj\Release\DabCoS.UnitTest.csprojResolveAssemblyReference.cache
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DabCoS.UnitTest\obj\Release\DabCoS.UnitTest.dll
-Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DabCoS.UnitTest\bin\Release\DabCoS.UnitTest.dll
-Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DabCoS.UnitTest\bin\Release\DaBCoS.Engine.dll
-Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DabCoS.UnitTest\bin\Release\nunit.framework.dll
-Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DabCoS.UnitTest\bin\Release\DifferenceEngine.dll
-Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DabCoS.UnitTest\obj\Release\DabCoS.UnitTest.csprojResolveAssemblyReference.cache
-Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DabCoS.UnitTest\obj\Release\DabCoS.UnitTest.dll

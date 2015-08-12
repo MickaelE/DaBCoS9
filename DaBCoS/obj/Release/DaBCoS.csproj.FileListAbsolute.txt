@@ -10,7 +10,6 @@
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS\obj\Release\DaBCoS.exe
 \\vmware-host\Shared Folders\Dokument\Visual Studio 2012\Projects\DaBCoS9\DaBCoS\obj\Release\DaBCoS.csprojResolveAssemblyReference.cache
 Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\bin\Release\DaBCoS.exe.config
-Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Release\DaBCoS.exe
 Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\bin\Release\DaBCoS.exe
 Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Release\DaBCoS.csprojResolveAssemblyReference.cache
 Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Release\DaBCoS.FormAbout.resources
@@ -20,3 +19,4 @@ Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Release\DaBCoS.FormM
 Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Release\DaBCoS.Results.resources
 Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Release\DaBCoS.FormSelectDatabase.resources
 Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Release\DaBCoS.csproj.GenerateResource.Cache
+Z:\Documents\Visual Studio 2013\Projects\DaBCoS9\DaBCoS\obj\Release\DaBCoS.exe

@@ -130,9 +130,7 @@ namespace DaBCoS
 		private System.Windows.Forms.MenuItem menuHelp;
 		private System.Windows.Forms.MenuItem itemHelpHomePage;
 		private System.Windows.Forms.MenuItem menuCompare;
-		private System.Windows.Forms.MenuItem itemCompareStart;
-        private TabPage spSyncScript;
-        private RichTextBox syncTextBox;
+        private System.Windows.Forms.MenuItem itemCompareStart;
         private TabPage tpUsers;
         private Label label2;
         private ListView lvConstraints;
@@ -252,8 +250,6 @@ namespace DaBCoS
             this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label2 = new System.Windows.Forms.Label();
-            this.spSyncScript = new System.Windows.Forms.TabPage();
-            this.syncTextBox = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lbLog = new System.Windows.Forms.ListBox();
             this.menuItem1 = new System.Windows.Forms.MenuItem();
@@ -272,12 +268,12 @@ namespace DaBCoS
             this.itemIncludeProcs = new System.Windows.Forms.MenuItem();
             this.itemIncludeTriggers = new System.Windows.Forms.MenuItem();
             this.itemIncludeConstraints = new System.Windows.Forms.MenuItem();
+            this.itemIncludeUsers = new System.Windows.Forms.MenuItem();
             this.menuItem9 = new System.Windows.Forms.MenuItem();
             this.itemIncludeAll = new System.Windows.Forms.MenuItem();
             this.itemIncludeNone = new System.Windows.Forms.MenuItem();
             this.menuCompare = new System.Windows.Forms.MenuItem();
             this.itemCompareStart = new System.Windows.Forms.MenuItem();
-            this.itemIncludeUsers = new System.Windows.Forms.MenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.sbpMessages)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sbpProgress)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -296,7 +292,6 @@ namespace DaBCoS
             this.tpTriggers.SuspendLayout();
             this.tpConstraints.SuspendLayout();
             this.tpUsers.SuspendLayout();
-            this.spSyncScript.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -701,7 +696,6 @@ namespace DaBCoS
             this.tcMain.Controls.Add(this.tpTriggers);
             this.tcMain.Controls.Add(this.tpConstraints);
             this.tcMain.Controls.Add(this.tpUsers);
-            this.tcMain.Controls.Add(this.spSyncScript);
             this.tcMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcMain.HotTrack = true;
             this.tcMain.Location = new System.Drawing.Point(3, 17);
@@ -1145,25 +1139,6 @@ namespace DaBCoS
             this.label2.TabIndex = 10;
             this.label2.Text = "Users";
             // 
-            // spSyncScript
-            // 
-            this.spSyncScript.Controls.Add(this.syncTextBox);
-            this.spSyncScript.Location = new System.Drawing.Point(4, 25);
-            this.spSyncScript.Name = "spSyncScript";
-            this.spSyncScript.Size = new System.Drawing.Size(798, 398);
-            this.spSyncScript.TabIndex = 6;
-            this.spSyncScript.Text = "Sync Script";
-            this.spSyncScript.UseVisualStyleBackColor = true;
-            // 
-            // syncTextBox
-            // 
-            this.syncTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.syncTextBox.Location = new System.Drawing.Point(0, 0);
-            this.syncTextBox.Name = "syncTextBox";
-            this.syncTextBox.Size = new System.Drawing.Size(798, 398);
-            this.syncTextBox.TabIndex = 0;
-            this.syncTextBox.Text = "";
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lbLog);
@@ -1302,6 +1277,12 @@ namespace DaBCoS
             this.itemIncludeConstraints.Text = "&Constraints";
             this.itemIncludeConstraints.Click += new System.EventHandler(this.itemIncludeMenu_Click);
             // 
+            // itemIncludeUsers
+            // 
+            this.itemIncludeUsers.Checked = true;
+            this.itemIncludeUsers.Index = 6;
+            this.itemIncludeUsers.Text = "&Users";
+            // 
             // menuItem9
             // 
             this.menuItem9.Index = 7;
@@ -1332,12 +1313,6 @@ namespace DaBCoS
             this.itemCompareStart.Index = 0;
             this.itemCompareStart.Text = "&Start compare";
             this.itemCompareStart.Click += new System.EventHandler(this.itemCompareStart_Click);
-            // 
-            // itemIncludeUsers
-            // 
-            this.itemIncludeUsers.Checked = true;
-            this.itemIncludeUsers.Index = 6;
-            this.itemIncludeUsers.Text = "&Users";
             // 
             // FormMain
             // 
@@ -1376,7 +1351,6 @@ namespace DaBCoS
             this.tpTriggers.ResumeLayout(false);
             this.tpConstraints.ResumeLayout(false);
             this.tpUsers.ResumeLayout(false);
-            this.spSyncScript.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -2107,7 +2081,7 @@ namespace DaBCoS
         private void syncronize()
         {
             // Emty resultwindow.
-            syncTextBox.Clear();
+         /*   syncTextBox.Clear();
 
             _dbDifferences = new DatabaseDifferences();
             Engine.Compare dbCompare = new Compare();
@@ -2123,12 +2097,12 @@ namespace DaBCoS
 
             }
             String incstance = _databaseLeft.Connection.DataSource.ToString();
-            ShowInfoMessage("Syncroninizing finnished.");
+            ShowInfoMessage("Syncroninizing finnished.");*/
         }
         public void scriptDifferences(Engine.DifferenceCollection differences)
         {
             // If there is no difference, theres are no meaing to continue.
-            if (differences.Count == 0) 
+  /*          if (differences.Count == 0) 
                 return;
             //Prepare file for write.
            //[DaBCoS.Engine.TableDifference]	{DaBCoS.Engine.TableDifference}	DaBCoS.Engine.TableDifference
@@ -2151,7 +2125,7 @@ namespace DaBCoS
                     }
                 }
             }
-
+            */
         }
 		/// <summary>
 		/// Compare two databases and show the differences
